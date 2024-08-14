@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Styled Map Selection</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!--Tipografía-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Para crear el toggle switch para los filtros -->
+  <div class="toggle-container">
+    <div class="toggle-option active" onclick="toggleOption(0)"><p>Parkings</p></div>
+    <div class="toggle-option" onclick="toggleOption(1)"><p>Garajes</p></div>
+  </div>
+  <div id="map"></div>
+  <div id="custom-tooltip" class="custom-tooltip"></div>
+
+ <!-- <script>
+    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+      key: "YOUR_API_KEY",
+      v: "weekly",
+      // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+      // Add other bootstrap parameters as needed, using camel case.
+    });
+
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=beta&libraries=marker"
+  </script>-->
+
+  
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+   
+    defer></script>
+
+    <script src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/markerclustererplus/src/markerclusterer.js"></script>
+    
+  <script src="main.js"></script>
+  <script src="markers_garajes.js"></script>
+  <script src="markers_parkings.js"></script>
+  <script src="ilustraciones.js"></script>
+
+</body>
+
+</html>

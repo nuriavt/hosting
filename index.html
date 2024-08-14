@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPAS DE NN</title>
+    <!--<link rel="stylesheet" href="estilo.css">-->
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <main>
+        <h1>Mapas de Google</h1>
+        <ul>
+            <li><a href="Mapa_prueba/index.html">Mapas de Parkings y Garajes <img src="img/arrow-right.svg"
+                        alt="flechita"></a></li>
+            <li><a href="Buscador_Mapav/Buscador_Mapa/index.html">Mapa Resultados de búsqueda <img
+                        src="img/arrow-right.svg" alt="flechita"></a></li>
+            <li><a href="Coordenadas_mapa/index.html">Mapa Estático NN Working <img src="img/arrow-right.svg"
+                        alt="flechita"></a></li>
+            <li><a href="Minisitemap/index.html">Mapa Microsite <img src="img/arrow-right.svg" alt="flechita"></a></li>
+        </ul>
+    </main>
+    <aside></aside> <!--Columna dreta-->
+    <nav></nav> <!--Columna esquerra-->
+    <footer></footer>
+
+</body>
+
+</html>
+
+<style>
+    body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F5ECEA;
+    }
+
+header{
+width: 100%;
+height: 40px;
+
+}
+header iframe{
+    text-align: right;
+}
+    
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        color: var(--Global-Secondary-800, #4A1719);
+        /* 72/regular */
+        font-family: Poppins;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        /* 72px */
+        letter-spacing: -1.44px;
+        /* width: 600px;*/
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #4A1719;
+        /* 32/light */
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%;
+        /* 44.8px */
+        letter-spacing: -0.08px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        position: relative;
+    }
+
+    a img {
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+        transform: translateX(-10px);
+    }
+
+    a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    a:hover {
+        color: #CB7062;
+    }
+
+    ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        padding: 0px;
+    }
+</style>

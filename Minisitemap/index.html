@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITULO CABEZA WEB</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="titulo">
+
+        <div id="container-titulo">
+            <h1>Entorno conectado</h1>
+            <p>Ubicado en un espacio exterior propicio al ejercicio y con proximidad a múltiples servicios, transporte
+                público, carril bici y multitud de espacios de interés turístico. </p>
+            <div>
+                
+                    <h3>Servicios cercanos</h3>
+                    <div class="POI_cercanos">
+                    <div class="filtro" >
+                        <img src="img/Restaurantes.svg" alt="icono restaurante">
+                        <p>Restaurantes</p>
+                    </div>
+                    <div class="filtro">
+                        <img src="img/Supermercado.svg" alt="icono supermercado">
+                        <p>Supermercados</p>
+                    </div>
+                    <div class="filtro">
+                        <img src="img/Farmacias.svg" alt="icono farmacia">
+                        <p>Farmacias</p>
+                    </div>
+                    <div class="filtro">
+                        <img src="img/Gimnasios.svg" alt="icono gimnasio">
+                        <p>Gimnasios</p>
+                    </div>
+                    <div class="filtro">
+                        <img src="img/Colegios.svg" alt="icono colegio">
+                        <p>Colegios</p>
+                    </div>
+                </div>
+                
+                    <h3>Transporte público</h3>
+                    <div class="POI_cercanos">
+                    <div class="filtro">
+                        <img src="img/Bicing.png" alt="icono bicing">
+                        <p>Bicing</p>
+                    </div>
+                    <div class="filtro">
+                        <img src="img/Metro.svg" alt="icono metro">
+                        <p>metro</p>
+                    </div>
+                    <div class="filtro">
+                        <img src="img/Tram.png" alt="icono tram">
+                        <p>TRAM</p>
+                    </div>
+                    <div class="filtro">
+                        <img src="img/FGC.png" alt="icono FGC">
+                        <p>FGC</p>
+                    </div>
+                    <div class="filtro">
+                        <img src="img/Autobus.png" alt="icono Autobus">
+                        <p>Autobús</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div id="map"></div>
+    <script src="index.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?v=beta&key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=marker,places&callback=initMap"></script>
+</body>
+
+</html>

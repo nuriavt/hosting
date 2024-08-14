@@ -1,0 +1,121 @@
+.toggle-container {
+  display: inline-block;
+  /* Ensure it is displayed */
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #3D7167;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: fit-content;
+}
+
+.toggle-option {
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+  color: #FBF5F4;
+
+  font-weight: 400;
+  margin: 3px;
+}
+
+.toggle-option.active {
+  background-color: #FBF5F4;
+  width: fit-content;
+  color: #220A0B;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 9.5px 9.5px;
+  margin: 3px;
+}
+
+.toggle-container p {
+  margin: 0%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 120%;
+}
+
+
+/*Segundo style*/
+
+.feh-content * {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#map {
+  height: 100%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.map-control {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+  font-family: "Roboto", "sans-serif";
+  margin: 10px;
+  /* Hide the control initially, to prevent it from appearing
+           before the map loads. */
+  display: none;
+}
+
+/* Display the control once it is inside the map. */
+#map .map-control {
+  display: block;
+}
+
+.custom-tooltip {
+  display: none;
+  position: absolute;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  /* Borde blanco */
+}
+
+.tooltip-location-name{
+  color: #00352B;
+
+/* 14/medium */
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: var(--White, #FFF);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 16.8px */
+
+margin-bottom: 2px;
+}
+
+.tooltip-location-type{
+  color: #11715F;
+
+/* 12/regular */
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: var(--White, #FFF);
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 14.4px */
+
+margin-top: 0px;
+}

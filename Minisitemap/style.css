@@ -1,0 +1,172 @@
+body {
+    /*width: 100%;*/
+    font-family: Poppins;
+    display: flex;
+    gap: 20px;
+    padding: 80px 52px;
+}
+
+.titulo{
+    width: 50%;
+}
+
+#container-titulo{
+    width: 503px;
+    gap: 40px;
+}
+
+#map{
+   /* width: 50%;*/
+    height: 448px;
+    width: 704px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+    /* 39.6px */
+    letter-spacing: -0.72px;
+}
+
+p {
+    color: var(--Red-Red-1000, #1C0C08);
+    /* Text/Text 16/Light */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* 150% */
+}
+
+h3 {
+    color: var(--Red-Red-500, #9D432F);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.POI_cercanos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+}
+
+.filtro{
+    width: fit-content;
+    height: fit-content;
+    padding: 9px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    border-radius: 40px;
+border: 1px solid var(--Gray-Gray-600, #777);
+background: var(--Gray-Gray-50, #FBFBFB);
+/*margin-right: 8px;*/
+cursor: pointer;
+}
+
+.filtro.active {
+    border: 1px solid var(--Red-Red-500, #9D432F);
+    background: var(--Red-Red-50, #F5ECEA);
+    /* sm */
+    box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+}
+
+.filtro p{
+    margin: 0px;
+    font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+letter-spacing: -0.24px;
+color: var(--Red-Red-1000, #1C0C08);
+}
+
+.filtro img{
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/*Estilo para los POI*/
+
+.custom-POI {
+    display: flex;
+    align-items: center;
+    position: relative; /* Cambia a relative para controlar el texto internamente */
+    padding: 2px; /* Ajusta el espacio alrededor del contenido si es necesario */
+    cursor: pointer;
+    z-index: 1;
+
+    /*Transicion para que el hover sea suave*/
+    transition: transform 0.1s ease-in-out;
+}
+
+.POI-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #E6A63D;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+    flex-shrink: 0; /* Previene que el icono se reduzca */
+   border-radius: 50%;
+   box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12) inset;
+
+}
+
+.POI-text {
+    color: #252525;
+    text-shadow:
+        1px 1px 0 #FFF,
+        -1px -1px 0 #FFF,
+        1px -1px 0 #FFF,
+        -1px 1px 0 #FFF; /* Ajusta el grosor y color del borde según sea necesario */
+    font-family: Poppins, sans-serif;
+    font-size: 10px; /* Ajusta el tamaño según sea necesario */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    position: absolute; /* Posiciona el texto absolutamente dentro del contenedor */
+    left: 24px; /* Ajusta la posición horizontal del texto, según sea necesario */
+    top: 16%; /* Ajusta la posición vertical del texto, según sea necesario */
+    transform: translateY(-50%); /* Centra verticalmente el texto */
+    display: none; /* Oculta el texto por defecto */
+    
+}
+
+/* Mostrar texto al hacer hover sobre el marcador */
+.custom-POI:hover .POI-text {
+    display: block;
+    
+}
+
+
+.custom-POI:hover {
+    transform: scale(1.1); /* Ajusta el factor de escala según el tamaño deseado */
+}
+
+
+/*Marker Principal*/
+.marker-icon{
+    fill: var(--Global-Secondary-500, #A24436);
+stroke-width: 1.25px;
+stroke: var(--Global-Support-100, #FFF);
+border-radius: 50%;
+width: 40px;
+height: 40px;
+flex-shrink: 0;
+}

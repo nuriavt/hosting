@@ -1,0 +1,132 @@
+#map {
+    height: 600px;
+    width: 50%;
+}
+
+/* Contenedor de los controles de zoom */
+.custom-zoom-controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+/* Estilos de los botones de zoom */
+.custom-zoom-button {
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.custom-zoom-button:hover {
+    background: #f7f7f7;
+}
+
+/* Marker style */
+.custom-marker {
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 0px 2px 0px rgba(24, 28, 22, 0.20), 0px 2px 2px 0px rgba(24, 28, 22, 0.10);
+    display: flex;
+    align-items: center;
+    padding: 5px 8px 4px 10px;
+    cursor: pointer;
+    transition: background 0.1s, color 0.1s; /* Añade transición para un efecto más suave */
+    z-index: 2;
+}
+
+.custom-marker:hover {
+    background: #2F3B2E;
+    color: #FFFFFF;
+    z-index: 1000; /* Asegura que el marcador esté encima de otros elementos */
+}
+
+.marker-icon {
+    display: flex;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.marker-text {
+    color: #141913;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+    margin: 0;
+}
+
+/* Cambiar color del texto al hacer hover */
+.custom-marker:hover .marker-text {
+    color: #FFFFFF;
+}
+
+/* POI markers */
+.custom-POI {
+    display: flex;
+    align-items: center;
+    position: relative; /* Cambia a relative para controlar el texto internamente */
+    padding: 2px; /* Ajusta el espacio alrededor del contenido si es necesario */
+    cursor: pointer;
+    z-index: 1;
+
+    /*Transicion para que el hover sea suave*/
+    transition: transform 0.1s ease-in-out;
+}
+
+.POI-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #E6A63D;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+    flex-shrink: 0; /* Previene que el icono se reduzca */
+   border-radius: 50%;
+   box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12) inset;
+
+}
+
+.POI-text {
+    color: #252525;
+    text-shadow:
+        1px 1px 0 #FFF,
+        -1px -1px 0 #FFF,
+        1px -1px 0 #FFF,
+        -1px 1px 0 #FFF; /* Ajusta el grosor y color del borde según sea necesario */
+    font-family: Poppins, sans-serif;
+    font-size: 10px; /* Ajusta el tamaño según sea necesario */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    position: absolute; /* Posiciona el texto absolutamente dentro del contenedor */
+    left: 24px; /* Ajusta la posición horizontal del texto, según sea necesario */
+    top: 16%; /* Ajusta la posición vertical del texto, según sea necesario */
+    transform: translateY(-50%); /* Centra verticalmente el texto */
+    display: none; /* Oculta el texto por defecto */
+    
+}
+
+/* Mostrar texto al hacer hover sobre el marcador */
+.custom-POI:hover .POI-text {
+    display: block;
+    
+}
+
+
+.custom-POI:hover {
+    transform: scale(1.1); /* Ajusta el factor de escala según el tamaño deseado */
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Personalizado con Cloud-based Styling</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?v=beta&key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=marker,places&callback=initMap">
+        </script>
+    <script src="index.js">  </script>
+    <script src="NN_living.js">  </script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class="loader" id="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot special"></div>
+        </div>
+    </div>
+</body>
+
+
+
+<style>
+/* Estilos del indicador de carga */
+
+  /* Estilos del indicador de carga */
+  .loader {
+    display: none;
+     /* display: inline-block;*/
+      position: absolute;
+      width: fit-content;
+      height: fit-content;
+      top: 32px;
+      left: 20%;
+      padding: 16px 32px;
+      align-items: center;
+      border-radius: 34px;
+      border: 1px solid var(--Gray-Gray-200, #E6E6E6);
+      background: var(--Base-White, #FFF);
+      box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+      display: flex;
+      justify-content: center;
+  }
+
+  .dot {
+      width: 6px;
+      height: 6px;
+      margin: 0 4px;
+      border-radius: 50%;
+      background: #BDCABC;
+      animation: pulse 1s infinite;
+  }
+
+  .dot:nth-child(1) {
+      animation-delay: 0s;
+  }
+
+  .dot:nth-child(2) {
+      animation-delay: 0.33s;
+  }
+
+  .dot:nth-child(3) {
+      animation-delay: 0.66s;
+  }
+
+  @keyframes pulse {
+      0%, 100% {
+          transform: scale(1);
+          background: #BDCABC;
+      }
+      50% {
+          transform: scale(1.5);
+          background: #2F3B2E;
+      }
+  }
+</style>
+
+</html>

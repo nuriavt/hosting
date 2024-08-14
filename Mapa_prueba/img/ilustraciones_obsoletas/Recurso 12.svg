@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.59 37.59">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-6 {
+        isolation: isolate;
+        opacity: .71;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #00352b;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="37.59" height="37.59"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" x="-.32" y="-.32" width="38.23" height="38.23"/>
+    </clipPath>
+  </defs>
+  <g id="text_i_icones" data-name="text i icones">
+    <g class="cls-6">
+      <g class="cls-1">
+        <g class="cls-5">
+          <rect class="cls-4" x=".13" y=".35" width="37" height="36.97"/>
+          <path class="cls-3" d="M19.89,28.27l1.49-16.75c.07-1.07-.12-2.09-.57-3.06l-.85-2.28c-.12-.25-.29-.45-.52-.59-.23-.15-.48-.22-.76-.22s-.53.07-.76.22c-.23.15-.4.35-.52.59l-.85,2.28c-.46.97-.65,1.99-.58,3.06l1.46,16.41-2.99,2.99c-.22.21-.33.47-.33.77v.27c0,.11.06.2.15.26s.19.07.3.03l3.26-1.5c.17.22.39.33.66.33h.37c.21,0,.4-.07.56-.21l3.01,1.39c.1.04.2.03.3-.03.09-.06.14-.15.15-.26v-.27c0-.3-.11-.56-.33-.77l-2.64-2.66Z"/>
+          <path class="cls-3" d="M15.29,15l-8.04,5.86c-.33.24-.49.56-.49.97v.59c0,.11.05.19.14.25.09.06.18.08.28.05l8.52-3.02-.42-4.7Z"/>
+          <path class="cls-3" d="M30.02,20.87l-7.97-5.81-.43,4.68,8.45,2.99c.1.03.2.01.28-.05s.13-.15.14-.25v-.59c0-.4-.15-.72-.48-.97Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
